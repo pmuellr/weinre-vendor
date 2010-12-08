@@ -21,6 +21,7 @@
         <antcall target="get-web-inspector"/>
         <antcall target="get-swt-mac"/>
         
+        <delete file="vendor-${WEINRE_VERSION}.zip"/>
         <zip destfile="vendor-${WEINRE_VERSION}.zip">
             <zipfileset dir="vendor" prefix="vendor"/>
         </zip>
